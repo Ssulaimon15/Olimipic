@@ -10,6 +10,7 @@
 		B903B268285158C200817DE4 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B903B267285158C200817DE4 /* HomeScreenViewController.swift */; };
 		B94EBF8D284E74D6000825A5 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94EBF8C284E74D6000825A5 /* LogInViewController.swift */; };
 		B97CBBCE284E72DB006C15A9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97CBBCD284E72DB006C15A9 /* SignUpViewController.swift */; };
+		B98104FF2872AA9500E18535 /* SearchPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98104FE2872AA9500E18535 /* SearchPageViewController.swift */; };
 		B99D581C284D222D003E61C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99D581B284D222D003E61C2 /* AppDelegate.swift */; };
 		B99D581E284D222D003E61C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99D581D284D222D003E61C2 /* SceneDelegate.swift */; };
 		B99D5820284D222D003E61C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99D581F284D222D003E61C2 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 		B903B267285158C200817DE4 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		B94EBF8C284E74D6000825A5 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		B97CBBCD284E72DB006C15A9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B98104FE2872AA9500E18535 /* SearchPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPageViewController.swift; sourceTree = "<group>"; };
 		B99D5818284D222D003E61C2 /* Olimipic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Olimipic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B99D581B284D222D003E61C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B99D581D284D222D003E61C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 		B99D580F284D222D003E61C2 = {
 			isa = PBXGroup;
 			children = (
+				B98104FE2872AA9500E18535 /* SearchPageViewController.swift */,
 				B99D581A284D222D003E61C2 /* Olimipic */,
 				B99D5819284D222D003E61C2 /* Products */,
 			);
@@ -149,6 +152,7 @@
 			files = (
 				B99D5820284D222D003E61C2 /* ViewController.swift in Sources */,
 				B99D581C284D222D003E61C2 /* AppDelegate.swift in Sources */,
+				B98104FF2872AA9500E18535 /* SearchPageViewController.swift in Sources */,
 				B97CBBCE284E72DB006C15A9 /* SignUpViewController.swift in Sources */,
 				B94EBF8D284E74D6000825A5 /* LogInViewController.swift in Sources */,
 				B99D581E284D222D003E61C2 /* SceneDelegate.swift in Sources */,

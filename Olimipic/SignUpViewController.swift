@@ -21,9 +21,8 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet weak var confirmPassword: UITextField!
     
-    @IBOutlet weak var confirmPasswordButton: UIButton!
     
-    @IBOutlet weak var visableLabel: UILabel!
+   
     
     var passwordVisible: Bool = true
     
@@ -35,27 +34,22 @@ class SignUpViewController: UIViewController {
         ageAdder.autorepeat = true
         ageAdder.maximumValue = 100
         
-        configureView()
+        
         
         // Do any additional setup after loading the view.
     }
     @IBAction func ageAdderStepper(_ sender: UIStepper) {
         ageTextField.text = Int(sender.value).description
     }
-    func configureView(){
-            passwordTextField.isSecureTextEntry = true
-            passwordTextField.clearsOnBeginEditing = false
-            showHidenLabel.setTitle("Show", for: .normal)
-            passwordStrength.isHidden = true
-        }
+        
     @IBAction func showHide() {
             if passwordVisible {
                 passwordTextField.isSecureTextEntry = false
-                showHidenLabel.setTitle("Hide", for: .normal)
+              
                 passwordVisible = false
             } else {
                 passwordTextField.isSecureTextEntry = true
-                showHidenLabel.setTitle("Show", for: .normal)
+                
                 passwordVisible = true
             }
         }
@@ -74,7 +68,8 @@ class SignUpViewController: UIViewController {
                }
     }
     
-   
+
+    
 }
 
 /*

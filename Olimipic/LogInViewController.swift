@@ -9,10 +9,49 @@ import UIKit
 
 class LogInViewController: UIViewController {
 
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var passwordStrength: UILabel!
+    
+    @IBOutlet weak var showHidenLabel: UIButton!
+    
+    
+    var passwordVisible: Bool = true
+    
+    var showPassword: Bool = true
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        
+    }
+    
+    @IBAction func showHide() {
+            if passwordVisible {
+                passwordTextField.isSecureTextEntry = false
+              
+                passwordVisible = false
+            } else {
+                passwordTextField.isSecureTextEntry = true
+                
+                passwordVisible = true
+            }
+        }
+    @IBAction func passwordType(_ sender: UITextField) {
+        
+        passwordStrength.isHidden = false
+               if (passwordTextField.text?.count)! < 3 {
+                   passwordStrength.text = "Password is weak"
+                   passwordStrength.textColor = UIColor.red
+               } else if (passwordTextField.text?.count)! > 8 {
+                   passwordStrength.text = "Password is unbreakable"
+                   passwordStrength.textColor = UIColor.green
+               } else {
+                   passwordStrength.text = "Password is safer"
+                   passwordStrength.textColor = UIColor.purple
+               }
     }
     
 
