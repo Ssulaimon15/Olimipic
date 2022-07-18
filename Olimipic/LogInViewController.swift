@@ -19,7 +19,7 @@ class LogInViewController: UIViewController {
     var passwordVisible: Bool = true
     
     var showPassword: Bool = true
-
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,20 +39,8 @@ class LogInViewController: UIViewController {
                 passwordVisible = true
             }
         }
-    @IBAction func passwordType(_ sender: UITextField) {
-        
-        passwordStrength.isHidden = false
-               if (passwordTextField.text?.count)! < 3 {
-                   passwordStrength.text = "Password is weak"
-                   passwordStrength.textColor = UIColor.red
-               } else if (passwordTextField.text?.count)! > 8 {
-                   passwordStrength.text = "Password is unbreakable"
-                   passwordStrength.textColor = UIColor.green
-               } else {
-                   passwordStrength.text = "Password is safer"
-                   passwordStrength.textColor = UIColor.purple
-               }
-    }
+   
+    
     
 
     /*

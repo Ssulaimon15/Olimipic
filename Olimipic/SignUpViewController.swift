@@ -40,6 +40,9 @@ class SignUpViewController: UIViewController {
     }
     @IBAction func ageAdderStepper(_ sender: UIStepper) {
         ageTextField.text = Int(sender.value).description
+        
+       
+        
     }
         
     @IBAction func showHide() {
